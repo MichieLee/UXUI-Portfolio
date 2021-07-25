@@ -1,0 +1,237 @@
+body {
+  margin: 0;
+	background: linear-gradient(317deg, #9CE8EE 0%, #6EB5FF 51%, #FFCAF8 85%);
+  }
+
+.navigation {
+	background-color: #282828;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 80px;
+	margin-top: 40px;
+	width: 100%;
+}
+
+.logo {
+  padding: 10px;
+  width: 150px;
+}
+
+.hamburger {
+	display: none;
+}
+
+ul {
+	display: flex;
+	justify-content: space-around;
+	list-style-type: none;
+	padding: 0;
+}
+
+.left-nav-list {
+	text-align: center;
+	width: 40%;
+}
+
+.right-nav-list {
+	text-align: center;
+	width: 40%;
+}
+
+li {
+	padding: 10px;
+	display: inline-block;
+	color: #FFCAF8;
+	font-size: 34px;
+  font-family: 'crushed', cursive;
+}
+
+.heroImg {
+  background-color: #EBEBEB;
+  padding: 100px 15px;
+}
+.content {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+.content h1 {
+  font-family: 'raleway', sans-serif;
+  font-size: 28px;
+}
+
+p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.01);
+  background: rgba(255,255,255,.42);
+  border: 1px solid rgba(203,213,219,0.3);
+  border-radius: 12px;
+  margin: 50px 10px 0 10px;
+}
+
+button {
+  padding: 9px;
+  background-color: #282828;
+  color: #FFCAF8;
+  font-size: 14px;
+  font-family: 'raleway', sans-serif;
+  border-radius: 13px;
+}
+
+footer {
+	background-color: #282828;
+	padding: 0px;
+}
+
+footer ul {
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 10px;
+	color: #FFCAF8;
+  font-family: 'crushed', cursive;
+}
+
+footer ul li {
+	padding: 10px;
+}
+
+.heading {
+  text-align: center;
+  padding: 15px 5px;
+  font-size: 42px;
+  font-family: 'crushed', cursive;
+}
+
+/* My UX Skills Section */
+.flexContainer {
+  display: flex;
+  padding: 0px 30px 60px 30px;
+}
+.flexContainer div {
+  width: 25%;
+  padding: 25px;
+  margin-inline: auto;
+}
+.skill{
+  margin: auto;
+  display: block;
+}
+
+h3 {
+  text-align: center;
+  font-family: 'raleway', sans-serif;
+  font-size: 28px;
+}
+
+/* My Work Section */
+.myWork {
+  padding: 60px 30px;
+  padding-top: 0;
+  background: rgba(255,255,255,.2);
+}
+
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+  background: rgba(255,255,255,.42);
+  border: 1px solid rgba(203,213,219,0.3);
+  border-radius: 12px;
+	color: black;
+	margin: 50px 10px 0 10px;
+	padding: 5px;
+	height: 400px;
+  display: grid;
+  grid-template-rows: 10% 90%;
+  grid-template-columns: 40% 60%;
+}
+
+.card1 h4 {
+  grid-area: 1 / 2;
+  align-self: center;
+  font-family: 'raleway', sans-serif;
+  font-size: 28px;
+}
+
+.card1 img {
+  grid-area: 1 / 1 / span 2 / span 1;
+	object-fit: cover;
+	width: 90%;
+	height: 90%;
+	justify-self: center;
+	align-self: center;
+}
+
+.card1 p {
+  grid-area: 2 / 2;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .left-nav-list ul, .right-nav-list ul {
+   display: none;
+ }
+
+ ul.hamburger {
+   display: flex;
+   position: relative;
+   flex-direction: column;
+   align-items: flex-end;
+ }
+
+ .hamburger-button {
+   display: inline;
+   position: relative;
+   z-index: 2;
+ }
+
+ .hamburger-button + li {
+   padding: 0;
+ }
+
+ .hamburger-button:focus {
+   content: url("close.png");
+ }
+
+ li.hamburger-button:focus + li ul.hamburger-menu {
+   display: flex;
+   flex-direction: column;
+   background-color: #282828;
+   position: absolute;
+   right: 0px;
+   align-self: center;
+   z-index: 1;
+ }
+
+ .flexContainer {
+   flex-direction: column;
+ }
+
+ .flexContainer .card {
+   width: calc(100% - 50px);
+ }
+
+ .card1 {
+   grid-template-rows: 10% 30% 60%;
+   grid-template-columns: 100%;
+ }
+
+ .card1 h4 {
+   grid-area: 1;
+ }
+
+ .card1 img {
+   grid-area: 2;
+ }
+
+ .card1 p {
+   grid-area: 3;
+ }
+}
