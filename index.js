@@ -42,11 +42,11 @@ $(".work-menu").on("mouseleave", function() {
 $(".hamburger").on("hamburger-menu-display:toggle", function() {
 	var image = $(".hamburger-button img");
 	var menu = $(".hamburger-menu");
-	if (image.attr("src") == "Hamburger.png") {
-		image.attr("src", "close.png");
+	if (image.attr("src") == "Images\\Hamburger.png") {
+		image.attr("src", "Images\\akar-icons_circle-x.png");
 		menu.slideDown("slow");
-	} else if (image.attr("src") == "close.png") {
-		image.attr("src", "Hamburger.png");
+	} else if (image.attr("src") == "Images\\akar-icons_circle-x.png") {
+		image.attr("src", "Images\\Hamburger.png");
 		menu.slideUp("slow");
 		$(".hamburger-menu .project-items li").remove();
 	}

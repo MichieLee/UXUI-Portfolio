@@ -245,7 +245,7 @@ h3 {
   width: 250%;
   right: 0px;
   align-self: center;
-  z-index: 1
+  z-index: 3;
 }
 
 .hamburger-menu .project-items {
@@ -254,6 +254,7 @@ h3 {
 
 .project-items li {
   font-size: 20px;
+  width: 100%;
   background-color: #FFCAF8;
   color: #282828;
   border-bottom: 2px solid #282828;
@@ -279,11 +280,13 @@ h3 {
   grid-area: 1 / 2 / span 1 / span 2;
   width: 75%;
   margin-top: 7%;
+  font-size: 20px;
 }
 
 .hero-img p {
   grid-area: 1 / 2 / span 1 / span 2;
   padding: 30% 0 0 30%;
+  font-size: 15px
 }
 
 .hero-img button {
