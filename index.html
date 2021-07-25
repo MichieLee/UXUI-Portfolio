@@ -6,13 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap&family=Crushed&family=Josefin+Sans:wght@300&family=Raleway&display=swap" rel="stylesheet">  
+<link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap&family=Crushed&family=Josefin+Sans:wght@300&family=Raleway&display=swap" rel="stylesheet"> 
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> 
   </head>
   <body>
     <header class="navigation">
       <div class="left-nav-list">
         <ul>
-          <a herf="#"><li>work</li></a>
+          <a herf="#"><li>work</li>
+            <ul class="work-menu">
+              <li>proj1</li>
+              <li>proj2</li>
+              <li>proj3</li>
+            </ul>
+          </a>
           <a herf="#"><li>about</li></a>
         </ul>
       </div>
@@ -27,6 +34,7 @@
     			<li>
             <ul class="hamburger-menu">
               <li>work</li>
+              <ul class="project-items"></ul>
               <li>about</li>
               <li>contact</li>
               <li>resume</li>
@@ -35,13 +43,11 @@
       </div>
     </header>
     <section class="heroImg">
-      <div class="content">
-        <img src="Images\signed.png">
-        <h1>Michie Lee</h1>
-        <p>Hi there! I’m Michie Lee and I am a data-driven creative with a unique and unconventional background who is dedicated to helping improve people’s lives.
-        </p>
-        <button>Download Resume</button>
-      </div>
+      <img class="about-me-pic" src="Images\AboutMe_Pic.png" alt="about me pic" height="60%">
+      <h1>Michie Lee</h1>
+      <p>Hi there! I’m Michie Lee and I am a data-driven creative with a unique and unconventional background who is dedicated to helping improve people’s lives.
+      </p>
+      <button>Download Resume</button>
     </section>
     <h1 class="heading">My UX Skills</h1>
     <section class="flexContainer">
@@ -75,23 +81,23 @@ I am experienced in quickly and effectively implementing feedback in a way that 
         </p>
       </div>
     </section>
-    <section class="myWork">
+    <section class="my-work">
       <h1 class="heading">My Work</h1>
-      <div class="flexContainer1">
-        <div class="card1">
+      <div class="flex-container-1">
+        <div class="card-1">
           <h4>Thing 1</h4>
           <img src="https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg"/>
           <p>
             filler textfiller textfiller textfiller textfiller textfiller textfiller textfiller textfiller textfiller textfiller textfiller textfiller
           </p>
         </div>
-        <div class="card1">
+        <div class="card-1">
           <h4>Thing 2</h4>
           <p>
             filler textfiller textfiller textfiller textfiller textfiller textfiller textfiller textfiller textfiller textfiller textfiller textfiller
           </p>
         </div>
-        <div class="card1">
+        <div class="card-1">
           <h4>Thing 3</h4>
           <p>
             filler textfiller textfiller textfiller textfiller textfiller textfiller textfiller textfiller textfiller textfiller textfiller textfiller
@@ -108,4 +114,5 @@ I am experienced in quickly and effectively implementing feedback in a way that 
       </ul>
     </footer>
   </body>
+  <script src="index.js"></script>
 </html>
